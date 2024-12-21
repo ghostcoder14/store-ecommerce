@@ -12,15 +12,16 @@ type ProductsProps = {
 const server = " jhfgsdkjh";
 
 
-const Productcard = ({productId ,
+const Productcard = ({
+      productId ,
       price ,
       name  , 
       photo ,
       stock , 
       handler, 
     }:ProductsProps) => {
-  return <div className="productcard">
-   <img src={`${server}/${photo}`} alt={name} />
+  return <div className="product-card">
+   <img src={photo} alt={name} />
    <p>{name}</p>
    <span> ₹{price}</span>
 <div>
